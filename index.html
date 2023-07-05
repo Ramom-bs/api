@@ -8,7 +8,9 @@
 </head>
 
 <body>
-    <h1> Requisição e Resposta via API</h1>
+    <h1>Interação com APIs</h1>
+    <h2> Requisição e Resposta </h2>
+    <button type="button" id="botão">Botão</button>
 
     <div id="resposta"></div>
 
@@ -18,18 +20,13 @@
         fetch(requisicao)
             .then(resposta => resposta.json())
             .then(resposta => {
-              
-                for (let i = 0; i < 3; i++){
-
-
+                for (let i = 0; i < 3; i++) {
                     let linha = `<p>${resposta[i].id}</p>`;
                     linha += `<p>${resposta[i].descricao}</p>`;
                     linha += `<p>${resposta[i].preco}</p>`;
-
                     const div = document.createElement("div");
-
                     document.querySelector('#resposta').appendChild(div)
-                    .innerHTML= linha;
+                        .innerHTML = linha;
                 }
             });
     </script>

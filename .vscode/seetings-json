@@ -1,5 +1,10 @@
 {
-    "liveserver.seetings.ignorefiles": {
-        
-    }
+    "liveServer.seetings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.scss",
+        "**/*sass",
+        "**/*.ts",
+        "**/db.json"
+    ],
+    "liveServer.settings.host": "localhost"
 }
