@@ -1,19 +1,20 @@
 {
-    "produtos": [
-        {
-            "id": 1,
-            "descricao": "sapato",
-            "preco": "19,90"
-        },
-        {
-            "id": 2,
-            "descricao": "sandalia",
-            "preco": "29,90"
-        },
-        {
-            "id": 3,
-            "descricao": "chinelo",
-            "preco": "39,90"
-        }
-    ]
+  "produtos": [
+    {
+      "id": 1,
+      "descricao": "sapato",
+      "preco": "19,90"
+    },
+    {
+      "id": 2,
+      "descricao": "sandalia",
+      "preco": "29,90"
+    },
+    {
+      "id": 3,
+      "descricao": "chinelo",
+      "preco": "39,90"
+    }
+    
+  ]
 }
