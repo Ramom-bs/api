@@ -1,0 +1,30 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+
+
+body {
+    font-family: 'Caprasimo', cursive;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+a {
+   background:rgb(211, 211, 211);  
+    
+}
+
+h1 {
+    background: rgb(165, 81, 25);
+}
+
+ul.produto {
+    background: rgb(211, 211, 211);
+}
