@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create com Post</title>
+    <title>Create com Put</title>
 </head>
 
 <body>
     <header>
         <a href="./">Home</a>
-        <h1>Create com POST</h1>
+        <h1>Update com PUT</h1>
     </header>
 
     <form action="" metohd="post">
@@ -24,7 +24,7 @@
         <label for="preco">Preço:</label>
         <input type="text" id="preco"><br>
 
-        <button type="button" id="btcadastrar">Cadastrar</button>
+        <button type="button" id="btAtualizar">Atualizar</button>
 
     </form>
 
@@ -32,7 +32,7 @@
 
     <script>
 
-        document.querySelector('#btcadastrar').addEventListener('click', () => {
+        document.querySelector('#btAtualizar').addEventListener('click', () => {
 
             const dados = {
                 'id': null,
@@ -40,8 +40,10 @@
                 'preco': document.querySelector('#descricao').value
             }
 
-            fetch('http://localhost:3000/produtos', {
-                method: 'POST',
+            const id = document.querySelector('#id').value;
+
+            fetch(`http://localhost:3000/produtos/${id}`, {
+                method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'
                 },
@@ -51,7 +53,7 @@
 
             then(resposta => {
                 if (resposta.ok) {
-                    alert('produto cadastrado');
+                    alert('produto atualizado');
                 }
 
             });

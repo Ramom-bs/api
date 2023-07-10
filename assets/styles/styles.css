@@ -1,10 +1,7 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 body {
-    font-family: 'Caprasimo', cursive;
+    font-family: 'Caprasimo';
 }
 
 .produto {
@@ -13,16 +10,17 @@ body {
     align-items: center;
     flex-direction: row;
     list-style: none;
-    
 }
 
 a {
-   background:rgb(211, 211, 211);  
-    text-shadow: 2px 2px ;
+    background: rgb(182, 182, 182);
+    text-shadow: 1px 1px;
+    color: black;
 }
 
 h1 {
     background: rgb(165, 81, 25);
+    text-shadow: 1px 3px;
 }
 
 ul.produto {
