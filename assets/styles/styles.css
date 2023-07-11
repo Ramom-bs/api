@@ -4,25 +4,25 @@ body {
     font-family: 'Caprasimo';
 }
 
-.produto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-}
-
-a {
-    background: rgb(182, 182, 182);
-    text-shadow: 1px 1px;
-    color: black;
+html {
+    background: #FEFFE4;
 }
 
 h1 {
-    background: rgb(165, 81, 25);
     text-shadow: 1px 3px;
+    text-align: center;
 }
 
-ul.produto {
-    background: rgb(211, 211, 211);
+form {
+    text-align: center;
+    background: #e4e4e4;
+    height: 180px;
+    border-radius: 12px;
+}
+
+li{
+    text-align: center;
+}
+input {
+    margin: 15px;
 }
