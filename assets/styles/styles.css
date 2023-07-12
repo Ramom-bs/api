@@ -2,27 +2,43 @@
 
 body {
     font-family: 'Caprasimo';
+    text-align: center;
+    margin: 50px;
 }
 
 html {
     background: #FEFFE4;
 }
 
-h1 {
-    text-shadow: 1px 3px;
-    text-align: center;
-}
-
-form {
-    text-align: center;
-    background: #e4e4e4;
-    height: 180px;
+.box-form {
+    height: 439px;
+    width: 25rem;
     border-radius: 12px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-li{
-    text-align: center;
+label {
+    display: block;
+    font-size: 20px;
+    margin-right: 5px;
 }
+
 input {
-    margin: 15px;
+    margin: 5px;
+    width: 304px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #FEFFE4;
+
+}
+
+button {
+    width: 167px;
+    height: 46px;
+    border-radius: 4px;
+    background: #48A4FA;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
 }

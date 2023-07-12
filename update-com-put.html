@@ -9,26 +9,32 @@
 
 <body>
 
-    <header>
-        <h1>Update com PUT</h1>
-    </header>
+    <div class="box-father">
+        <header>
+            <h1>Update com PUT</h1>
+        </header>
 
-    <form action="" metohd="post">
+        <form class="box-form" action="" metohd="post">
 
-        <label for="id">ID</label>
-        <input type="text" id="id" disabled><br>
+            <h2>Alteração de produtos</h2>
 
-        <label for="descricao">Descrição:</label>
-        <input type="text" id="descricao"><br>
+            <label for="id">ID</label>
+            <input type="text" id="id" placeholder="digite o ID do produto"><br>
 
-        <label for="preco">Preço:</label>
-        <input type="text" id="preco"><br>
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" placeholder="digite a descrição do produto"><br>
 
-        <button type="button" id="btAtualizar">Atualizar</button>
+            <label for="preco">Preço</label>
+            <input type="text" id="preco" placeholder="digite o preço do produto"><br>
 
-    </form>
+            <button type="button" id="btAtualizar">Atualizar</button>
+            <button type="button" id="btAtualizar">Cancelar</button>
 
-    <div id="listaprodutos"></div>
+        </form>
+
+        <div id="listaprodutos"></div>
+
+    </div>
 
     <script>
 
