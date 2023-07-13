@@ -27,10 +27,12 @@
             <label for="preco">Preço</label>
             <input type="text" id="preco" placeholder="digite o preço do produto"><br>
 
-            <button type="button" id="btAtualizar">Atualizar</button>
-            <button type="button" id="btAtualizar">Cancelar</button>
+            <button type="button" id="btatualizar">Atualizar</button>
+            <button type="button" id="btcancelar">Cancelar</button>
 
         </form>
+
+        <p>Lista produtos</p>
 
         <div id="listaprodutos"></div>
 
@@ -38,7 +40,7 @@
 
     <script>
 
-        document.querySelector('#btAtualizar').addEventListener('click', () => {
+        document.querySelector('#btatualizar').addEventListener('click', () => {
 
             const dados = {
                 'id': null,
@@ -59,7 +61,7 @@
 
             then(resposta => {
                 if (resposta.ok) {
-                    alert('produto atualizado');
+                    alert('produtoatualizado');
                 }
 
             });

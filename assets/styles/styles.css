@@ -3,11 +3,19 @@
 body {
     font-family: 'Caprasimo';
     text-align: center;
-    margin: 50px;
+    margin: 0px;
 }
 
 html {
     background: #FEFFE4;
+}
+
+h1 {
+    margin: 50px;
+}
+
+h2 {
+    margin: 20px;
 }
 
 .box-form {
@@ -16,29 +24,66 @@ html {
     border-radius: 12px;
     background: #FFF;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
 }
 
 label {
     display: block;
-    font-size: 20px;
-    margin-right: 5px;
+    font-size: 16px;
+    margin-right: 220px;
+    color: #000000;
 }
 
 input {
-    margin: 5px;
+    margin: 18px;
     width: 304px;
     height: 34px;
     border-radius: 4px;
     border: 1px solid #000;
     background: #FEFFE4;
-
 }
 
 button {
+    margin: 19px;
     width: 167px;
     height: 46px;
     border-radius: 4px;
     background: #48A4FA;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
+    font-size: 24px;
+}
+
+#btcancelar {
+    width: 118px;
+    height: 46px;
+    background: #F59999;
+    color: #444;
+}
+
+p {
+    width: 243px;
+    height: 38px;
+    font-size: 24px;
+}
+
+
+ul {
+    width: 1810px;
+    height: 43px;
+    border-bottom: 1px solid #000000;
+    margin: auto;
+}
+
+ul:nth-child(odd) {
+    background: #FFF;
+}
+
+ul:nth-child(even) {
+    background: #FFF1C1;
+}
+
+li {
+    display: contents;
+    font-size: 16px;
 }
