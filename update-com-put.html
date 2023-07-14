@@ -10,6 +10,7 @@
 <body>
 
     <div class="box-father">
+
         <header>
             <h1>Update com PUT</h1>
         </header>
@@ -40,12 +41,28 @@
 
     <script>
 
+        document.querySelector('#listaprodutos').addEventListener('click', event => {
+
+            if (event.target.parentElement.classList.contains('produto')) {
+
+                const elementoBase = event.target.parentElement;
+
+                document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="id"]').innerHTML;
+
+                document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="descricao"]').innerHTML;
+
+                document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="preco"]').innerHTML;
+
+            }
+        });
+
         document.querySelector('#btatualizar').addEventListener('click', () => {
 
             const dados = {
                 'id': null,
                 'descricao': document.querySelector('#descricao').value,
-                'preco': document.querySelector('#descricao').value
+                'preco': document.querySelector('#descricao').value,
+                'atualizado': true
             }
 
             const id = document.querySelector('#id').value;
@@ -79,6 +96,20 @@
                 for (let i = 0; i < resposta.length; i++) {
 
                     const ul = document.createElement('ul');
+                    ul.classList.add('produto');
+                    ul.id = resposta[i].id;
+
+                    if (resposta[i].atualizado) {
+                        ul.style.color = 'blue';
+                    }
+
+                    const liId = document.createElement('li');
+                    liId.setAttribute('data-produtos', 'id');
+                    ul.id = resposta[i].descricao;
+
+                    const liDescricao = document.createElement('li');
+                    liId.setAttribute('data-produtos', 'descricao');
+                    ul.id = resposta[i].preco;
 
                     ul.appendChild(document.createElement('li')).innerHTML = resposta[i].id;
                     ul.appendChild(document.createElement('li')).innerHTML = resposta[i].descricao;
