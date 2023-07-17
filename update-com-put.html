@@ -28,8 +28,8 @@
             <label for="preco">Preço</label>
             <input type="text" id="preco" placeholder="digite o preço do produto"><br>
 
-            <button type="button" id="btatualizar">Atualizar</button>
-            <button type="button" id="btcancelar">Cancelar</button>
+            <button type="enviar" id="btatualizar">Atualizar</button>
+            <button type="reset" id="btcancelar" >Cancelar</button>
 
         </form>
 
@@ -55,6 +55,27 @@
 
             }
         });
+
+            function verificaSeInputsEstaoPreenchidos() {
+
+                const idPreenchido = document.querySelector('input#id').value !== "";
+                const descricaoPreenchido = document.querySelector('input#descricao').value !== "";
+                const  precoPreenchido = document.querySelector('input#preco').value !== "";
+
+                if(idPreenchido || descricaoPreenchido || precoPreenchido) {
+                    document.querySelector('button#btCancelar').removeAttribute('disabled');
+                } else {
+                    document.querySelector('button#btCancelar').setAttribute('disabled','');
+                }
+            }
+
+            document.querySelector('form').addEventListener('reset', () => {
+                document.querySelector('button#btCancelar').setAttribute('disabled','');
+            });
+
+            document.querySelector('form').addEventListener('keyup', () => {
+                verificaSeInputsEstaoPreenchidos();
+            }) 
 
         document.querySelector('#btatualizar').addEventListener('click', () => {
 
@@ -95,13 +116,13 @@
 
                 for (let i = 0; i < resposta.length; i++) {
 
-                    const ul = document.createElement('ul');
-                    ul.classList.add('produto');
-                    ul.id = resposta[i].id;
-
                     if (resposta[i].atualizado) {
                         ul.style.color = 'blue';
                     }
+
+                    const ul = document.createElement('ul');
+                    ul.classList.add('produto');
+                    ul.id = resposta[i].id;
 
                     const liId = document.createElement('li');
                     liId.setAttribute('data-produtos', 'id');
