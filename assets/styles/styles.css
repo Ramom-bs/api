@@ -52,37 +52,44 @@ button {
     color: #FFF;
 }
 
-#btcancelar :disabled {
+button:hover{
+    background: #4793e9;
+}
+
+#btcancelar {
     width: 118px;
     height: 46px;
     background: #F59999;
     color: #444;
 }
 
+#btcancelar:hover{
+    background: #F88888;
+}
+
 p {
-    width: 243px;
-    height: 38px;
+    width: 255px;
     font-size: 24px;
 }
 
-
-ul {
-    width: 1810px;
-    height: 43px;
-    border-bottom: 1px solid #000000;
-    margin: auto;
+.produto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
 }
 
-ul:nth-child(odd) {
-    background: #FFF;
+.produto:nth-child(even) {
+    background-color: #FFF1C1;
+    border-bottom: 1px solid #000;
+
 }
 
-ul:nth-child(even) {
-    background: #FFF1C1;
-}
-
-li {
-    font-size: 16px;
-    display: contents;
-    line-height: normal;
+.produto:nth-child(odd) {
+    background-color: #FFF;
+    border-bottom: 1px solid #000;
 }
