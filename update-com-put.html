@@ -29,7 +29,7 @@
             <input type="text" id="preco" placeholder="digite o preço do produto"><br>
 
             <button type="enviar" id="btatualizar">Atualizar</button>
-            <button type="reset" id="btcancelar">Cancelar</button>      
+            <button type="reset" id="btcancelar">Cancelar</button>
 
         </form>
 
@@ -47,7 +47,7 @@
 
                 const elementoBase = event.target.parentElement;
 
-                document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="id"]').innerHTML; 
+                document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="id"]').innerHTML;
 
                 document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="descricao"]').innerHTML;
 
@@ -64,21 +64,26 @@
 
             if (idPreenchido || descricaoPreenchido || precoPreenchido) {
                 document.querySelector('button#btCancelar').removeAttribute('disabled');
-                document.querySelector('button#btCancelar').removeAttribute('disabled');
+                if (idPreenchido) {
+                    document.querySelector('button#btAtualizar').removeAttribute('disabled');
+                
+         } else {
+                document.querySelector('button#btAtualizar').setAttribute('disabled', '');
+         }
+        } else {
 
-
-            } else {
-                document.querySelector('button#btCancelar').setAttribute('disabled', '');
-            }
+            document.querySelector('button#Cancelar').setAttribute('disabled', '');
+            document.querySelector('button#Atualizar').setAttribute('disabled', '');
         }
 
         document.querySelector('form').addEventListener('reset', () => {
             document.querySelector('button#btCancelar').setAttribute('disabled', '');
+            document.querySelector('button#btAtualizar').setAttribute('disabled', '');
         });
-
-        document.querySelector('form').addEventListener('keyup', () => {
+    }
+        document.querySelector('form').addEventListener('input', () => {
             verificaSeInputsEstaoPreenchidos();
-        })
+        });
 
         document.querySelector('#btatualizar').addEventListener('click', () => {
 
