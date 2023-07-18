@@ -74,13 +74,12 @@ p {
     font-size: 24px;
 }
 
-.produto{
+.produto {
     padding: 10px;
     font-size: 20px;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
     list-style: none;
 }
