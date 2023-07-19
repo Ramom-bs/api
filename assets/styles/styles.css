@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 body {
-    margin: 0px;
+    margin: 40px;
     font-family: 'Caprasimo';
     text-align: center;
 }
@@ -28,33 +28,32 @@ h2 {
 }
 
 label {
+    padding-left: 50px;
     font-size: 16px;
-    margin-right: 220px;
-    padding-left:50px ;
     display: flex;
 }
 
 input {
     width: 304px;
     height: 34px;
-    margin: 18px;
+    margin: 14px;
     border-radius: 4px;
-    border: 1px solid #000; 
+    border: 1px solid #000;
     background: #FEFFE4;
 }
 
 button {
     width: 167px;
     height: 46px;
+    font-size: 24px;
     margin: 19px;
     border-radius: 4px;
-    font-size: 24px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: #48A4FA;
     color: #FFF;
 }
 
-button:hover{
+button:hover {
     background: #4793e9;
 }
 
@@ -65,7 +64,7 @@ button:hover{
     color: #444;
 }
 
-#btcancelar:hover{
+#btcancelar:hover {
     background: #F88888;
 }
 
@@ -79,18 +78,16 @@ p {
     font-size: 20px;
     margin: 0;
     display: flex;
-    justify-content: space-between;
     list-style: none;
+    justify-content: space-between;
 }
 
 .produto:nth-child(even) {
-    background-color: #FFF1C1;
     border-bottom: 1px solid #000;
-
+    background-color: #FFF1C1;
 }
 
 .produto:nth-child(odd) {
-    background-color: #FFF;
     border-bottom: 1px solid #000;
+    background-color: #FFF;
 }
-

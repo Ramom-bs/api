@@ -14,7 +14,7 @@
         <h1>Read com GET</h1>
     </header>
 
-    <div id="listaprodutos"></div>
+    <div id="listaProdutos"></div>
 
     <script>
         fetch('http://localhost:3000/produtos', {
@@ -29,20 +29,23 @@
                 for (let i = 0; i < resposta.length; i++) {
 
                     const ul = document.createElement('ul');
+
                     ul.classList.add('produto');
-
-
                     ul.appendChild(document.createElement('li')).innerHTML = resposta[i].id;
                     ul.appendChild(document.createElement('li')).innerHTML = resposta[i].descricao;
                     ul.appendChild(document.createElement('li')).innerHTML = resposta[i].preco;
 
                     document.querySelector('#listaprodutos').appendChild(ul);
                 }
-
             });
     </script>
 
-    <script src="./assets/scripts/estilos.js"> </script>
+    <script type="module">
+        import { buscasProdutos } from './assets/scripts/read-com-get.js';
+        buscasProdutos();
+    </script>
+
+    <script src="./assets/scripts/estilos.js"></script>
 
 </body>
 
