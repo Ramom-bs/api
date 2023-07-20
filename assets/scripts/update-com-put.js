@@ -10,9 +10,9 @@ document.querySelector('#listaprodutos').addEventListener('click', event => {
 
         document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="id"]').innerHTML;
 
-        document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="descricao"]').innerHTML;
+        document.querySelector('input#descricao').value = elementoBase.querySelector('[data-produto="descricao"]').innerHTML;
 
-        document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="preco"]').innerHTML;
+        document.querySelector('input#preco').value = elementoBase.querySelector('[data-produto="preco"]').innerHTML;
 
     }
     verificaSeInputsEstaoPreenchidos
