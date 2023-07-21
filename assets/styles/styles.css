@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 body {
-    margin: 40px;
+    margin: 45px;
     font-family: 'Caprasimo';
     text-align: center;
 }
@@ -69,7 +69,7 @@ button:hover {
 }
 
 p {
-    width: 255px;
+    width: 190px;
     font-size: 24px;
 }
 
